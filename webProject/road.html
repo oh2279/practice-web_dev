@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>오시는 길</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CafeCss.css" type="text/css">
+  
+  <script src = "CafeJs.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+</head>
+
+ <body>
+    <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#" onclick = "home()" >Logo</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav" id = "liNavbar">
+			<li onclick = "home()" ><a href="#">홈</a></li>
+			<li onclick = "menuIntroduce()"><a href ="#">메뉴소개</a></li>
+			<li class="active" onclick = "directions()"><a href="#">오시는 길</a></li>
+			<li> <a href="./remind/index.php">교육신청게시판</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+           <li onclick = "login()"><a href="#"><span class="glyphicon glyphicon-user"></span> 로그인</a></li>
+           <li onclick = "Signin()"><a href="#"><span class="glyphicon glyphicon-log-in"></span> 회원가입</a></li>
+         </ul>
+		</div>
+	  </div>
+	</nav>
+
+    <div class="container text-center">
+        <h1><strong>오시는 길</strong></h1>
+       <p>대중교통을 이용시에는 숲속마을 9단지 앞이나, 세원고등학교 앞, 또는 시립유치원 앞에서 내리시면 됩니다</p>
+        <!-- <img src="road.jpg" class="img-rounded" alt="Cinque Terre" width="900" height="500">  -->
+    </div>
+    <div class="map text-center" id="inf">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.974097473312!2d126.79893371565004!3d37.673316425762614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c90148b54ce8f%3A0x1777e749e87e2105!2z7Lm07Y6Y7YGs66Gc7Iqk!5e0!3m2!1sko!2skr!4v1637851186929!5m2!1sko!2skr" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+   
+   <footer class="container-fluid text-center" id = "footer">
+		<div id="navigation">
+			<div class="flex-container">
+				<div><a href="https://www.instagram.com/cross20130901/?hl=ko"><img src="images/insta.jpg" 	width="80" height="80" alt="insta" /></a></div>
+			</div>
+			
+		</div>
+		<h2>영업시간 안내</h2>
+		<p>연중무휴<br/>11:00 ~ 22:00<br/></p>
+	</footer>
+	
+</body>
+
+</html>
